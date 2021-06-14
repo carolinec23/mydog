@@ -5,9 +5,10 @@ export const ContentData = {
     heading: 'Hello, my name is Lexi',
     paragraphOne: 'I am a boxer, as you can see.',
     paragraphTwo: 'Very cute I am, indeed. I bet you want to see more of me.',
+    buttonLink: '/dogs',
     buttonLabel: 'Show Me More',
     image: ImageOne,
-    reverse: true,
+    reverse: false,
     delay: 100
 };
 
@@ -18,8 +19,9 @@ export const ContentDataTwo = {
                     Feed them. Take them to their favorite park, throw around a ball or two. Wanna go \
                     on vacation? Can\'t take your pet along? Our gain. Yesss. We will take them in and \
                     cherish the moment.',
+    buttonLink: '/services',
     buttonLabel: 'Services and Prices',
     image: ImageTwo,
-    reverse: false,
+    reverse: true,
     delay: 100
 };

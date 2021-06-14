@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled, { css } from 'styled-components/macro';
-import { Link } from 'react-router-dom';
-import { animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-router-dom';   
+import { Link as ScrollLink } from 'react-scroll';
 import { menuData } from '../data/MenuData';
 import { Button } from './Button';
 import { FaDog } from 'react-icons/fa';
@@ -63,6 +63,10 @@ const NavMenu = styled.div`
 
 const NavMenuLinks = styled(Link)`
     ${NavLink}
+
+    &:hover {
+      text-shadow: 2px 2px 4px #000000; 
+    }
 `;
 
 const NavBtn = styled.div`
@@ -75,7 +79,6 @@ const NavBtn = styled.div`
     }
 `;
 
-
 const Navbar = ({ toggle }) => {
     const [nav, setNav] = useState(false);
 
@@ -84,17 +87,19 @@ const Navbar = ({ toggle }) => {
             let scrolled = document.scrollingElement.scrollTop;
             if (scrolled >= (window.innerHeight / 4)) {
                 setNav(true)
-                console.log(window.scrollY)
             } else {
                 setNav(false)
-                console.log(window.scrollY)
             }
         })
     },[])
 
+    const ScrollToTop = () => {
+        window.scrollTo(0, 0);
+    }
+
     return (
         <Nav navbar={nav}>
-            <Logo to="/">LEXI<FaDog /></Logo>
+            <Logo to="/" onClick={ScrollToTop}>LEXI<FaDog /></Logo>
             <MenuBars onClick={toggle}/>
             <NavMenu>
                 {menuData.map((item, index) => (
@@ -104,7 +109,7 @@ const Navbar = ({ toggle }) => {
                 ))}
             </NavMenu>
             <NavBtn>
-                <Button to="/contact">Contact Us</Button>
+                <ScrollLink to="contact" smooth={true}><Button>Contact Us</Button></ScrollLink>
             </NavBtn>
         </Nav>
     )

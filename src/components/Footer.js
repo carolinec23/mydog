@@ -38,6 +38,7 @@ const SubscriptionText = styled.p`
 const InputAreas = styled.div`
     form {
         display: flex;
+        align-items: center;
     }
 `;
 
@@ -45,7 +46,6 @@ const FooterInput = styled.input`
     padding: 8px 20px;
     border-radius: 2px;
     margin-right: 10px;
-    margin-bottom: 16px;
     outline: none;
     border: none;
     font-size: 18px;
@@ -134,6 +134,11 @@ const FooterLogo = styled.div`
         font-style: italic;
         font-size: 1.8rem;
         font-weight: 600;
+
+        &:hover {
+        color: #FF9B42;
+        transition: 0.3s ease-out;
+        }
     }
 `;
 
@@ -153,12 +158,21 @@ const SocialIcons = styled.div`
         color: #fff;
         font-size: 24px;
         text-decoration: none;
+
+        &:hover {
+        color: #FF9B42;
+        transition: 0.3s ease-out;
+        }
     }
 `;
 
 const Footer = () => {
+    const ScrollToTop = () => {
+        window.scrollTo(0, 0);
+    }
+
     return (
-        <Container>
+        <Container id="contact">
             <Subscription>
                 <SubscriptionHeading>
                     Join our Legendary Lexi Newsletter to receive your weekly dose of dashing doggos. 
@@ -208,7 +222,7 @@ const Footer = () => {
             <SocialMedia>
                 <SocialMediaWrapper>
                     <FooterLogo>
-                        <Link to='' className="social-logo">
+                        <Link to='' onClick={ScrollToTop} className="social-logo">
                             LEXI<FaDog />
                         </Link>
                     </FooterLogo>

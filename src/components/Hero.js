@@ -131,7 +131,7 @@ const Hero = ({ slides }) => {
             setCurrent(current => (current === length -1 ? 0 : current + 1))
         }
 
-        timeout.current = setTimeout(nextSlide, 3000)
+        timeout.current = setTimeout(nextSlide, 5000)
 
         return function () {
             if (timeout.current) {
@@ -146,8 +146,6 @@ const Hero = ({ slides }) => {
         }
 
         setCurrent(current === length - 1 ? 0 : current + 1)
-
-        //console.log(current)
     };
 
     const prevSlide = () => {
@@ -156,8 +154,6 @@ const Hero = ({ slides }) => {
         }
 
         setCurrent(current === 0 ? length - 1 : current - 1)
-
-        //console.log(current)
     };
 
     if(!Array.isArray(slides) || slides.length <= 0) {

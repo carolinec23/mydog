@@ -5,35 +5,35 @@ import ImageFour from '../images/P1130319.JPG'
 
 export const SliderData = [
     {
-        title: 'Lexi 1',
-        caption: 'Cute dog',
+        title: 'Dog Walking, Made Fancy',
+        caption: "In the mornings, in the evenings - whenever you're busy.",
+        path: '/services',
+        label: 'View Pricing',
+        image: ImageTwo,
+        alt: 'Dog'
+    },
+    {
+        title: 'Meet our Mascot',
+        caption: 'Our beloved boxer is always present, making new friends every day.',
         path: '/dogs',
         label: 'View Dog',
         image: ImageOne,
         alt: 'Dog'
     },
     {
-        title: 'Lexi 2',
-        caption: 'Cute dog again',
-        path: '/dogs',
-        label: 'View Dog',
-        image: ImageTwo,
+        title: "Dog Sitting, With a Twist",
+        caption: "Hotel doesn't allow dogs? Pft, we've got you covered.",
+        path: '/services',
+        label: 'View Pricing',
+        image: ImageFour,
         alt: 'Dog'
     },
     {
-        title: 'Lexi 3',
-        caption: 'Another cute dog',
+        title: 'Lexi, the Muse Behind it All',
+        caption: 'Oh! Here she is again. Very cute, as always. ',
         path: '/dogs',
         label: 'View Dog',
         image: ImageThree,
-        alt: 'Dog'
-    },
-    {
-        title: 'Lexi 4',
-        caption: 'Cute dog, once again, no surprise',
-        path: '/dogs',
-        label: 'View Dog',
-        image: ImageFour,
         alt: 'Dog'
     }
 ]
