@@ -14,7 +14,6 @@ const Section = styled.section`
 `;
 
 const Container = styled.section`
-    //padding: 1rem calc((100vw - 1300px) / 2);
     padding: 0 calc((100vw - 1300px) / 2);
     display: grid;
     grid-template-columns: 1fr 1fr;

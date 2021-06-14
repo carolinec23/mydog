@@ -15,10 +15,7 @@ export const ContentData = {
 export const ContentDataTwo = {
     heading: 'So what do we do?',
     paragraphOne: 'Lots of things... What do you want us to do?',
-    paragraphTwo: 'Just kidding. We love dogs. Our dogs, your dogs. All dogs. Let us pet them. \
-                    Feed them. Take them to their favorite park, throw around a ball or two. Wanna go \
-                    on vacation? Can\'t take your pet along? Our gain. Yesss. We will take them in and \
-                    cherish the moment.',
+    paragraphTwo: "Just kidding. We love dogs. Our dogs, your dogs. All dogs. Let us pet them. Feed them. Take them to their favorite park, throw around a ball or two. Wanna go on vacation? Can't take your pet along? Our gain. Yesss. We will take them in and cherish the moment.",
     buttonLink: '/services',
     buttonLabel: 'Services and Prices',
     image: ImageTwo,
